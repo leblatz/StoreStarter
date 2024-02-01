@@ -21,7 +21,7 @@ function App() {
         //console.log(product)
         try {
           const response = await axios.delete(`http://localhost:3000/api/products/${oneProduct.id}`)
-          //console.log(response)
+          console.log(response)
           const newProducts = products.filter((product) => {
               return product.id !== oneProduct.id
           })
